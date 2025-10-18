@@ -1,0 +1,12 @@
+base_model: /root/llms/Llama-2-7b-alpaca-cleaned
+lora_path: /root/llms/sft_movie_peft_llama_7b/checkpoint-1024
+head_generated_path: /root/samlrs/data/ml-1m-processed/generated/sft_train_ep1_head.jsonl
+tail_generated_path: /root/samlrs/data/ml-1m-processed/generated/sft_train_ep1_tail.jsonl
+result_path: /root/samlrs/data/ml-1m-processed/result/sft_ep1.json
+train_path: /root/samlrs/data/ml-1m-processed/train/train.json
+val_path: /root/samlrs/data/ml-1m-processed/valid/valid.json
+dataset_name: movie
+use_weight: False
+rho: 0
+lambda: 0
+epoch: 1

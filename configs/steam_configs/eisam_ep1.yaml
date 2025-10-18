@@ -1,0 +1,12 @@
+base_model: /root/llms/Llama-2-7b-alpaca-cleaned
+lora_path: /root/llms/weight_sam_steam_peft_llama_7b/checkpoint-1024
+head_generated_path: /root/samlrs/data/steam-processed/generated/weight_sam_train_ep1_head.jsonl
+tail_generated_path: /root/samlrs/data/steam-processed/generated/weight_sam_train_ep1_tail.jsonl
+result_path: /root/samlrs/data/steam-processed/result/weight_sam_ep1.json
+train_path: /root/samlrs/data/steam-processed/train/train_with_weight.json
+val_path: /root/samlrs/data/steam-processed/valid/valid.json
+dataset_name: steam
+use_weight: True
+rho: 0.05
+lambda: 0.5
+epoch: 1
